@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'people/index'
+  get 'people', to: 'people#index'
+  
   get 'cards/add', to: 'cards#add'
   post 'cards/add', to: 'cards#add'
   
